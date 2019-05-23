@@ -1,0 +1,25 @@
+{
+  "name": "bs-4-handdrawn",
+  "version": "1.0.0",
+  "description": "a hand drawn styling of bootstrap elements",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bootstrap",
+    "hand",
+    "drawn",
+    "theme"
+  ],
+  "author": "don liggett",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "gulp": "^4.0.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-watch": "^5.0.1"
+  }
+}

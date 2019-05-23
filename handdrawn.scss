@@ -1,0 +1,38 @@
+////////////////////////////////////////////
+// HandDrawn Bootstrap 4 Theme Overrides
+
+// Borders
+$border-radius:				0.8rem 0.3rem / 0.2rem 0.6rem !default;
+$border-radius-lg:			$border-radius;
+$border-radius-sm:			$border-radius;
+
+$dropdown-border-radius:	0 0 0.1rem 0.1rem !default; // Make top of dropdown pane flat 
+
+$border-width:				2px;
+
+// Shadows
+$btn-box-shadow: 			8px 4px 9px -11px rgba(85,85,85,1);
+
+// Typography
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Handlee&display=swap');
+
+$headings-font-family:		'Shadows Into Light', cursive, Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-sans-serif:	'Handlee', cursive, Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-size-base:			1.1rem !default; // Increase the font size slightly
+
+// Headers
+$h1-font-size:				$font-size-base * 2.75 !default;
+$h2-font-size:				$font-size-base * 2.25 !default;
+$h3-font-size:				$font-size-base * 2 !default;
+$h4-font-size:				$font-size-base * 1.75 !default;
+$h5-font-size:				$font-size-base * 1.5 !default;
+$h6-font-size:				$font-size-base * 1.25 !default;
+
+// Cards
+.card { overflow: hidden; } // Hide overflow of card images					
+
+////////////////////////////////////////////
+// Import Bootstrap (or be more granular and only import the bootstrap scss you need)
+
+@import "node_modules/bootstrap/scss/bootstrap";
