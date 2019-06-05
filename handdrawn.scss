@@ -30,7 +30,34 @@ $h5-font-size:				$font-size-base * 1.5 !default;
 $h6-font-size:				$font-size-base * 1.25 !default;
 
 // Cards
-.card { overflow: hidden; } // Hide overflow of card images					
+.card { overflow: hidden; } // Hide overflow of card images			
+
+// Tabs
+.nav-link { 
+	border-radius: .4rem .25rem 0 0;
+	&.active { border-radius: .25rem .35rem 0 0; }
+}
+
+// Modals
+.fade {
+	&.show {
+		.modal-dialog {
+			-webkit-animation-name: wiggle;
+			-webkit-animation-duration: 500ms;
+			-webkit-animation-iteration-count: 1;
+			-webkit-animation-timing-function: ease-in-out;
+		}
+	}
+}
+
+// Animations
+@keyframes wiggle {
+  0% {transform: rotate(.3deg);}
+  25% {transform: rotate(-.3deg);}
+  50% {transform: rotate(.5deg);}
+  75% {transform: rotate(-.1deg);}
+  100% {transform: rotate(.0deg);}
+}
 
 ////////////////////////////////////////////
 // Import Bootstrap (or be more granular and only import the bootstrap scss you need)
