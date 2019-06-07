@@ -1,6 +1,8 @@
 ////////////////////////////////////////////
 // HandDrawn Bootstrap 4 Theme Overrides
 
+// TODO: Organize 'loose' values into variables and place them on top of overrides
+
 // Borders
 $border-radius:				0.8rem 0.3rem / 0.2rem 0.6rem !default;
 $border-radius-lg:			$border-radius;
@@ -50,6 +52,26 @@ $h6-font-size:				$font-size-base * 1.25 !default;
 	}
 }
 
+// Pagination
+.pagination {
+	.page-item {
+	    
+		transform: skew(1deg, 1deg);
+	    margin-right: 5px;
+		&:first-child {
+			transform: skew(-1deg, -1deg);
+		}
+		&:last-child {
+			transform: skew(0.5deg, 0.5deg);
+		}
+	}
+
+	.page-link {
+		border-radius: .4rem .15rem/.1rem .3rem;
+	}
+
+}
+
 // Animations
 @keyframes wiggle {
   0% {transform: rotate(.3deg);}
@@ -58,6 +80,48 @@ $h6-font-size:				$font-size-base * 1.25 !default;
   75% {transform: rotate(-.1deg);}
   100% {transform: rotate(.0deg);}
 }
+
+// Forms
+.form-group {
+	& input { // clean up, probably make a variable for the padding(shared)
+    	padding: .535rem .75rem .375rem; // Adjust padding for custom font
+	}
+}
+
+// Buttons
+button { // clean up
+	padding: .535rem .75rem .375rem !important; // Adjust padding for custom font
+}
+
+// Popovers
+.bs-popover-top[role="tooltip"] .arrow,
+.bs-popover-bottom[role="tooltip"] .arrow {
+    transform: skew(-20deg, -1deg);
+}
+.bs-popover-left[role="tooltip"] .arrow,
+.bs-popover-right[role="tooltip"] .arrow {
+    transform: skew( 0deg, -30deg);
+}
+
+// Tooltips
+.bs-tooltip-top[role="tooltip"] .arrow,
+.bs-tooltip-bottom[role="tooltip"] .arrow {
+    transform: skew(-20deg, -1deg);
+}
+.bs-tooltip-left[role="tooltip"] .arrow,
+.bs-tooltip-right[role="tooltip"] .arrow {
+    transform: skew( 0deg, -30deg);
+}
+
+// Images
+svg,
+img {
+	border-radius:		0.8rem 0.3rem / 0.2rem 0.6rem;
+}
+
+
+$input-btn-padding-y:         .375rem !default;
+$input-btn-padding-x:         .75rem !default;
 
 ////////////////////////////////////////////
 // Import Bootstrap (or be more granular and only import the bootstrap scss you need)
