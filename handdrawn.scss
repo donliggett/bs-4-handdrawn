@@ -120,6 +120,20 @@ img {
 }
 
 
+////////////////////////////////////////////
+// FOR DEMO
+// TODO: Remove from here, add task to complile seperately
+
+.jumbotron-fluid {
+  background-image: url("../img/pencil.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+
 $input-btn-padding-y:         .375rem !default;
 $input-btn-padding-x:         .75rem !default;
 
